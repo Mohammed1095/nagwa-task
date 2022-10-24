@@ -1,17 +1,18 @@
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Practice from "./pages/Practice";
 import Rank from "./pages/Rank";
 function App() {
   return (
     <Router>
-      <Switch>
+      <Routes>
         <Route path="/" exact>
           <Practice />
         </Route>
         <Route path="/rank">
           <Rank />
         </Route>
-      </Switch>
+      </Routes>
     </Router>
   );
 }
