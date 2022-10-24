@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Practice from "./pages/Practice";
 import Rank from "./pages/Rank";
 function App() {
