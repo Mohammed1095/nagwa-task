@@ -19,7 +19,10 @@ const Practice = () => {
       pos: response[key].pos,
     });
   }
+
   setWords(loadedWords);
+
+  const currentQuest = words.map((value) => value.word);
 
   // to handle loading state
   if (loading) {
@@ -44,11 +47,7 @@ const Practice = () => {
   return (
     <Box>
       <Typography variant="h4">Categorize the following word </Typography>
-      <Typography mt={5}>
-        {words.map((word) => {
-          word = { word };
-        })}
-      </Typography>
+      <Typography mt={5}>{currentQuest}</Typography>
       <Box mt={2}>
         <Button>Noun</Button>
       </Box>
